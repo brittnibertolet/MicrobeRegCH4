@@ -23,6 +23,8 @@ theme_set(theme_bw()+theme(panel.grid = element_blank(),
 # Read in data and set up for MCC and non-MCC analyses ----
 #Read in OTU table
 otu=read.csv("MicrobeRegCH4/data/otuTable.csv", stringsAsFactors = F) 
+str(otu)
+sum(as.numeric(otu$OTU.ID))
 #Environmental metadata
 env=read.csv("MicrobeRegCH4/data/envTable.csv", stringsAsFactors = F)
 
@@ -346,7 +348,7 @@ MCC.other.bar=ggplot(otherM, aes(x=lakeID, y=relAbund))+geom_col(aes(fill=order)
         legend.position = "bottom")+
   guides(fill=guide_legend(nrow=5,byrow=F))
 MCC.other.bar
-ggsave("figures/MCC-barOther.pdf", width=6.5, height=5)
+#ggsave("figures/MCC-barOther.pdf", width=6.5, height=5)
 
 
 

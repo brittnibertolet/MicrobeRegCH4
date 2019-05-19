@@ -1,2 +1,2 @@
 ## Repository for Bertolet et al. 
-Microbial regulators of methanogenesis in lake sediments
+Organic matter supply and bacterial community composition predict methanogenesis rates in temperate lake sediments
